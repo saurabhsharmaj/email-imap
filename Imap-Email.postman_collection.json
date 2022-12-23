@@ -1,0 +1,36 @@
+{
+	"info": {
+		"_postman_id": "e60134ad-ec48-4bae-b9ad-7e5986d07320",
+		"name": "Imap-Email",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"to\": \"sourabh.sharma0185@gmail.com\",\r\n    \"subject\": \"test email \",\r\n    \"message\": \"test email\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/sendemail",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sendemail"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
