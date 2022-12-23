@@ -19,7 +19,9 @@ import org.springframework.stereotype.Service;
 public class EmailServices {
 	public boolean sendEmail(String to, String message, String subject)
 	{
-				String from="nikskhandelwal0405@gmail.com";
+				//String from="nikskhandelwal0405@gmail.com";
+		String password="Welcome_01935";
+		String from="sourabh.sharma0185@gmail.com";
 				boolean flag= false;
 				//gmail variable
 				
@@ -45,7 +47,7 @@ public class EmailServices {
 					@Override
 					protected PasswordAuthentication getPasswordAuthentication() {
 					
-						return new PasswordAuthentication("email-address", "password"); 
+						return new PasswordAuthentication(from, password); 
 					}	
 				});
 				
